@@ -1,7 +1,3 @@
-Voici une cheatsheet complète pour Docker et Docker Compose :
-
----
-
 ### **Docker Basics**
 1. **Installation**  
    - Linux : `curl -fsSL https://get.docker.com | sh`  
