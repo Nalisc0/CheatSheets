@@ -239,3 +239,127 @@
 - [AWS CLI Reference](https://awscli.amazonaws.com/v2/documentation/)
 - [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 - [AWS Cheat Sheets](https://tutorialsdojo.com/aws-cheat-sheets/)
+
+
+# **Cheatsheet pour la certification AWS Certified Cloud Practitioner**
+
+---
+
+### **1. Concepts du Cloud**
+- **Avantages du Cloud** (6 principes) :
+  - Coûts variables vs CAPEX
+  - Économies d'échelle
+  - Pas de gestion de capacité
+  - Agilité et rapidité
+  - Pas de maintenance des data centers
+  - Déploiement mondial en minutes
+
+- **Modèles de Déploiement** :
+  - **Public** (AWS), **Privé** (On-prem), **Hybride** (mixte)
+  - **Serverless** (ex: AWS Lambda)
+
+- **Modèles de Service** :
+  - **IaaS** (EC2, VPC)
+  - **PaaS** (Elastic Beanstalk, RDS)
+  - **SaaS** (Office 365, Salesforce)
+
+---
+
+### **2. Services AWS Essentiels**
+- **Compute** :
+  - **EC2** : Machines virtuelles
+  - **Lambda** : Serverless (exécution par événements)
+  - **Elastic Beanstalk** : Déploiement automatisé
+
+- **Stockage** :
+  - **S3** : Stockage objet (durabilité 99.999999999%)
+  - **EBS** : Stockage bloc pour EC2
+  - **Glacier** : Archivage low-cost
+
+- **Bases de Données** :
+  - **RDS** : Bases relationnelles managées (MySQL, PostgreSQL)
+  - **DynamoDB** : NoSQL serverless
+  - **Redshift** : Entrepôt de données
+
+- **Réseau** :
+  - **VPC** : Cloud privé virtuel
+  - **Route 53** : DNS managé
+  - **CloudFront** : CDN (cache)
+
+- **Sécurité** :
+  - **IAM** : Gestion des accès (utilisateurs, rôles, politiques)
+  - **KMS** : Gestion des clés de chiffrement
+
+---
+
+### **3. Sécurité et Conformité**
+- **Modèle de Responsabilité Partagée** :
+  - **AWS** : Sécurité **du** cloud (infrastructure)
+  - **Client** : Sécurité **dans** le cloud (données, IAM, etc.)
+
+- **Outils** :
+  - **CloudTrail** : Audit des appels API
+  - **AWS Shield** : Protection DDoS
+  - **WAF** : Firewall pour applications web
+
+- **Conformité** :
+  - **AWS Artifact** : Rapports de conformité (PCI DSS, HIPAA)
+  - Chiffrement des données (au repos et en transit)
+
+---
+
+### **4. Facturation et Coûts**
+- **Modèles de Prix** :
+  - **On-Demand** : Pay-as-you-go
+  - **Reserved Instances** : Réduction pour engagements (1-3 ans)
+  - **Spot Instances** : Offres à prix réduit (interruptibles)
+
+- **Outils de Gestion** :
+  - **AWS Cost Explorer** : Analyse des coûts
+  - **Budgets** : Alertes de dépenses
+  - **Trusted Advisor** : Recommandations d'optimisation
+
+- **Support** :
+  - **Basic** (gratuit), **Developer**, **Business**, **Enterprise** (TAM inclus)
+
+---
+
+### **5. Architecture et Bonnes Pratiques**
+- **Piliers du Well-Architected Framework** :
+  1. Excellence opérationnelle
+  2. Sécurité
+  3. Fiabilité
+  4. Performance
+  5. Optimisation des coûts
+
+- **Concepts Clés** :
+  - **Haute Disponibilité** : Multi-AZ
+  - **Élasticité** : Auto-scaling (EC2, Lambda)
+  - **Découplage** : SQS (file d'attente), SNS (notifications)
+
+---
+
+### **6. Infrastructure Globale**
+- **Régions** : Zones géographiques (ex: eu-west-1)
+- **Zones de Disponibilité (AZ)** : Data centers isolés dans une région
+- **Edge Locations** : Points de présence pour CloudFront et Route 53
+
+---
+
+### **7. Astuces pour l'Examen**
+- **Focus sur** : IAM, S3, EC2, VPC, Facturation
+- **Termes Clés** :
+  - **Fault Tolerance** : Résistance aux pannes
+  - **CAPEX/OPEX** : Coûts initiaux vs récurrents
+- **Questions** : Éliminez les réponses improbables, attention aux "AWS best practices".
+
+---
+
+### **Ressources Recommandées**
+- **Whitepapers** : "AWS Well-Architected", "AWS Security Best Practices"
+- **Cours** : AWS Training (Digital Training), Exam Readiness sur AWS Skill Builder
+- **QCM** : Tests pratiques officiels et plateformes tierces (ex: Tutorials Dojo)
+
+---
+
+**En Résumé** : Comprenez les concepts de base, les services clés, la sécurité partagée, et les outils de gestion des coûts. Bonne chance ! 🚀
