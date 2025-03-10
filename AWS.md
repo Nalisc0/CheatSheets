@@ -331,6 +331,7 @@
   3. Fiabilité
   4. Performance
   5. Optimisation des coûts
+  6. Durabilité
 
 - **Concepts Clés** :
   - **Haute Disponibilité** : Multi-AZ
