@@ -247,8 +247,60 @@ docker stop $(docker ps -aq)
 # Supprimer toutes les images
 docker rmi $(docker images -q)
 
-# Alias utiles (à ajouter dans ~/.bashrc)
-alias dps='docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}"'
+```
+
+---
+
+### **Aliases (from Laluka)**
+```bash
+dbl='docker build'
+dcin='docker container inspect'
+dcls='docker container ls'
+dclsa='docker container ls -a'
+dex='docker exec -it $(docker ps | grep -vF "CONTAINER ID" | fzf | cut -d" " -f1)'
+dexr='docker exec -it -u root $(docker ps | grep -vF "CONTAINER ID" | fzf | cut -d " " -f1)'
+dib='docker image build'
+dii='docker image inspect'
+dils='docker image ls'
+dipru='docker image prune -a'
+dipu='docker image push'
+dirm='docker image rm'
+dit='docker image tag'
+dlo='docker container logs'
+dnc='docker network create'
+dncn='docker network connect'
+dndcn='docker network disconnect'
+dni='docker network inspect'
+dnls='docker network ls'
+dnorestart='docker update --restart=no $(docker ps -q)'
+dnrm='docker network rm'
+dockit='docker run --rm -it -v /tmp:/tmp -v "$PWD":/skahost -w /skahost'
+dockns='sudo nsenter -a -t $(docker inspect -f "{{.State.Pid}}" $(docker ps | grep -vF "CONTAINER ID" | fzf | cut -d" " -f1))'
+dpo='docker container port'
+dps='docker ps'
+dpsa='docker ps -a'
+dpu='docker pull'
+dr='docker container run'
+drit='docker container run -it'
+drm='docker container rm'
+'drm!'='docker container rm -f'
+drs='docker container restart'
+dst='docker container start'
+dsta='docker stop $(docker ps -q)'
+dstopall='docker stop $(docker ps -q)'
+dstp='docker container stop'
+dsts='docker stats'
+dtop='docker top'
+dvi='docker volume inspect'
+dvls='docker volume ls'
+dvprune='docker volume prune'
+dwipe-all='docker system prune -a -f --volumes'
+dwipe-image='docker rmi -f $(docker images -q)'
+dwipe-network='docker network rm $(docker network ls -q | tr "\n" " ")'
+dwipe-process='docker rm $(docker ps -a -q)'
+dwipe-volume='docker volume rm $(docker volume ls -q | tr "\n" " ")'
+dxc='docker container exec'
+dxcit='docker container exec -it'
 ```
 
 📚 **Documentation officielle** :  
