@@ -50,4 +50,3 @@
 
 ![](hotkeys.png#gh-light-mode-only)
 ![](white_hotkeys.png#gh-dark-mode-only)
-![](tunnel-SSH.jpg)
