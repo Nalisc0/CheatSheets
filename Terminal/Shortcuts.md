@@ -12,6 +12,7 @@
 | `Alt + D`  | Supprimer le mot après le curseur                      |
 | `Ctrl + Y` | Coller (yank) le dernier texte coupé                   |
 | `Ctrl + _` | Annuler (undo) la dernière modification                |
+| `Ctrl + Q` | (ZSH only) push-line (cache + nouveau prompt)          |
 
 ---
 
