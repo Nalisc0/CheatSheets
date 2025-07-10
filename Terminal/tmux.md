@@ -76,7 +76,7 @@
   setw -g mode-keys vi
   ```
 
-  - Ajouter ceci à `.tmux.conf` pour utiliser la souris pour défiler dans le prompte :
+  - Ajouter ceci à `.tmux.conf` pour utiliser la souris pour défiler dans le prompt :
   ```bash
   set-option -g mouse on
   ```
