@@ -93,6 +93,7 @@ set-option -g mouse on
 set-option -g history-limit 10000
 set-option -g status-bg white
 set-option -g status-fg black
+set -g base-index 1
 ```
 
 ---
