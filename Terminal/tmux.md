@@ -76,9 +76,23 @@
   setw -g mode-keys vi
   ```
 
+  - Ajouter ceci à `.tmux.conf` pour utiliser la souris pour défiler dans le prompte :
+  ```bash
+  set-option -g mouse on
+  ```
+
 - Redémarrer tmux après modif :
   ```bash
   tmux source-file ~/.tmux.conf
   ```
+---
+
+## Exemple de fichier de conf .tmux.conf
+```bash
+set-option -g mouse on
+set-option -g history-limit 10000
+set-option -g status-bg white
+set-option -g status-fg black
+```
 
 ---
